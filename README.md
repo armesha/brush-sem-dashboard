@@ -1,6 +1,6 @@
-# BRUSH SEM Dashboard - Demonstrace schopností
+# BRUSH SEM Dashboard
 
-Tento projekt jsem vytvořil jako odpověď na pracovní pozici Programátor/Vývojář ve společnosti BRUSH SEM s.r.o. Dashboard zpracovává a vizualizuje klíčové údaje o výrobě a údržbě pomocí **JavaScriptu**, **HTML**, **CSS** a **Excel VBA**.
+Tento projekt jsem vytvořil jako odpověď na pracovní pozici Programátor/Vývojář ve společnosti BRUSH SEM s.r.o. [Dashboard](https://armesha.github.io/brush-sem-dashboard/index.html) zpracovává a vizualizuje klíčové údaje o výrobě a údržbě pomocí **JavaScriptu**, **HTML**, **CSS** a **Excel VBA**.
 
 Dashboard poskytuje:
 - **Přehled výroby** a stavu zařízení v reálném čase.
