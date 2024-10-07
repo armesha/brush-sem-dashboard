@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include jsPDF CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="production_stats.html">Production Stats</a></li>
+            <li><a href="equipment_status.html">Equipment Status</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Dashboard Demo (HTML, CSS, JavaScript, Excel VBA Integration)</h1>
+        <div class="widget" id="overveiew">
+            <div class="metrics">
+                <div class="metric">
+                    <h3>Total Production</h3>
+                    <p id="total-production">Loading...</p>
+                </div>
+                <div class="metric">
+                    <h3>Running Equipment</h3>
+                    <p id="running-equipment">Loading...</p>
+                </div>
+                <div class="metric">
+                    <h3>Maintenance Equipment</h3>
+                    <p id="maintenance-equipment">Loading...</p>
+                </div>
+                <div class="metric">
+                    <h3>Upcoming Maintenance</h3>
+                    <p id="upcoming-maintenance">Loading...</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2>Production Overview</h2>
+                <canvas id="overviewProductionChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h2>Equipment Status Overview</h2>
+                <canvas id="overviewEquipmentChart"></canvas>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

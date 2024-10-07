@@ -1,0 +1,166 @@
+/* css/styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.metric {
+    flex: 1 1 200px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.metric h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.metric p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.chart-container {
+    margin-bottom: 40px;
+}
+
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#downloadReport, .download-cv-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#downloadReport:hover, .download-cv-button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#equipmentSearch {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#reportsList {
+    list-style: none;
+    padding: 0;
+}
+
+#reportsList li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#reportsList li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#reportsList li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .widget {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .chart-container {
+        width: 100%;
+    }
+
+    .metrics {
+        justify-content: space-between;
+    }
+
+    table {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,43 @@
+<!-- production_stats.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Production Stats</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include jsPDF CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="production_stats.html" class="active">Production Stats</a></li>
+            <li><a href="equipment_status.html">Equipment Status</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Production Statistics</h1>
+        <div class="widget" id="production-stats">
+            <p>Loading data...</p>
+            <div class="chart-container">
+                <h2>Daily Production</h2>
+                <canvas id="dailyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h2>Weekly Production</h2>
+                <canvas id="weeklyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h2>Monthly Production</h2>
+                <canvas id="monthlyChart"></canvas>
+            </div>
+            <button id="downloadReport">Download Report</button>
+        </div>
+    </main>
+</body>
+</html>
